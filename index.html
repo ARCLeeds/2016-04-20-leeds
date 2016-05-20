@@ -2,7 +2,7 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
 venue: "The University of Leeds"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Faculty of Engineering, Woodhouse Lane, Leeds, LS2 9JT"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+address: "School of Mechanical Engineering (5th floor cluster, room 5.34), Woodhouse Lane, Leeds, LS2 9JT"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "gb"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "53.809847, -1.555563"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
@@ -114,7 +114,8 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 -->
 <p id="requirements">
   <strong>Requirements:</strong> We will be using Matlab and a few other tools that are installed on the PCs in the teaching cluster we will
-  be using. We also ask you to abide by Software Carpentry's
+  be using. You will need to install one software package on your M:drive (see
+  <a href="#setup">below</a>). We also ask you to abide by Software Carpentry's
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
 
@@ -153,7 +154,16 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   {% endif %}
   for more information.
 </p>
-
+<p id="lunch">
+  <strong>Dietary requirements:</strong> Lunch and coffee breaks are included for both days.
+  Please mail 
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  {% else %}
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+  {% endif %}
+  for any requirements other than vegetarian
+</p>
 <hr/>
 
 <!--
@@ -310,6 +320,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <h2 id="setup">Setup</h2>
 
 Most of the software we will be using is already installed on the PCs in the teaching cluster.
+    <h3 id="setup-git">Git and the Bash Shell</h3>
+    <p>
+    Download the Git for Windows Portable <a href="https://github.com/git-for-windows/git/releases/download/v2.8.2.windows.1/PortableGit-2.8.2-64-bit.7z.exe">archive</a>.
+    Extract the archive on your M:drive (via Desktop Anywhere if you are not a student based in Leeds): on the pop-up window, type M:\GitForWindows
+    </p>
 <p></p>
 <!--
   Uncomment this section if you are using our virtual machine.
